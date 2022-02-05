@@ -1,27 +1,33 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Welcome to my Football quiz in Python!
 
-Welcome USER_NAME,
+## Introduction
+---
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
-## Reminders
+Football is one of my true passions in life and attending quiz nights is another; so what better to combine them both and create a python game which will help with my personal development using the python language?! \
+And count towards my third Project Milestone with Code Institute.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+The [Premier League](https://www.premierleague.com/) is the most watched league in the world as it is the most challenging and competitive. So with this quiz I to hope it will be challenging but fun!
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Table of Contents
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+* [User Experience](#UX)
+    * [Site Goals](#Site-Goals)
+    * [User Stories](#User-Stories)
+    * [The Scope Plane](#The-Scope-Plane)
+    * [The Structure Plane](#The-Structure-Plane)
+    * [The Surface Plane](#The-Surface-Plane)
+* [Features](#features)
+* [Future Developments](#future-developments)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## UX
 
-Connect your GitHub repository and deploy as normal.
+
 
 ## Constraints
 

@@ -24,7 +24,7 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
-
+----
 ## UX
 
 

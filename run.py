@@ -3,22 +3,33 @@ import sys
 import time
 
 
+def clear_console():
+    """
+    Clears the console function, with help
+    from https://www.delftstack.com/howto/python/python-clear-console/
+    """
+    command = 'clear'
+    if os.name in ('nt', 'dos'):  # If Machine is running on Windows, use cls
+        command = 'cls'
+    os.system(command)
+
+
 def welcome():
     """
     Print ASCII art and get users name
     """
     print('Welcome to my Ultimate Premier League Quiz!')
     print("""
-             ___
-      _.-'___'-._
-    .'--.`   `.--'.
-   /.'   \   /   `.\
-  | /'-._/```\_.-'\ |
-  |/    |     |    \|
-  | \ .''-._.-''. / |
-   \ |     |     | /
-    '.'._.-'-._.'.'
-      '-:_____;-'
+                      ___
+                  _.-'___'-._
+                .'--.`   `.--'.
+               /.'   \   /   `.\
+              | /'-._/```\_.-'\ |
+              |/    |     |    \|
+              | \ .''-._.-''. / |
+               \ |     |     | /
+                '.'._.-'-._.'.'
+                  '-:_____;-'
         \n""")
     time.sleep(1)
     print("\nCan you become champions?\n")
@@ -39,6 +50,7 @@ def quiz_instructions():
     """
     Prints the quiz instructions 
     """
+    clear_console()
     print("This quiz is based on the Premier League,")
     print("The greatest league in the world!")
     print("I hope this quiz is fun yet challenging.")
@@ -51,8 +63,8 @@ def quiz_instructions():
     time.sleep(2)
     print("3. You will get a point for a correct answer.\n")
     time.sleep(2)
-    print("4. Once all questions are answered, your position " +
-    "will be revealed")
+    print(("4. Once all questions are answered, your position " 
+        "will be revealed...'"))
     print()
     print("-" * 25)
 

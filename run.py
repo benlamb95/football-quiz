@@ -1,3 +1,28 @@
+import os
+import sys
+import time
+
+def welcome():
+    """
+    Print ASCII art and get users name
+    """
+    print('Welcome to my Ultimate Premier League Quiz!')
+    print("""
+            _...----.._
+     ,:':::::.     `>.
+   ,' |:::::;'     |:::.
+  /    `'::'       :::::;\
+:         /:::::\      `  ::\
+ /         _____     `:
+| ,.     /::SSt::\        |
+|;:::.   `::::::;'        |
+::::::     `::;'      ,.  ;
+ \:::'              ,::::/
+  \                 \:::/
+   `.     ,:.        :;'
+     `-.::::::..  _.''
+        ```----'''
+        """)
 
 
 class Question:
@@ -138,4 +163,4 @@ question_answer = [
 ] 
 
 
-print(question_prompt)
+print(welcome())

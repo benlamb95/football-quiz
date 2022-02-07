@@ -35,6 +35,25 @@ def welcome():
             break
 
 
+def quiz_instructions():
+    """
+    Prints the quiz instructions 
+    """
+    print("This quiz is based on the Premier League,")
+    print("The greatest league in the world!")
+    print("I hope this quiz is fun yet challenging.")
+    print("-" * 25)
+    time.sleep(1)
+    print("1. To answer a question select a, b or c.")
+    time.sleep(1)
+    print("2. The program will let you know if the answer is correct")
+    time.sleep(1)
+    print("3. You will get a point for a correct answer.")
+    time.sleep(1)
+    print("4. Once all questions are answered, your position " +
+    "will be revealed")
+
+
 class Question:
     """
     Class for question which provides both,
@@ -173,4 +192,4 @@ question_answer = [
 ]
 
 
-print(welcome())
+print(quiz_instructions())

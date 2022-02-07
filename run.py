@@ -29,12 +29,12 @@ def welcome():
     while True:
         name = input("\nPlease enter your teams name:\n").title()
         if any(l.isdigit() for l in name):
-            print("\nPlease enter letters only\n")           
+            print("\nPlease enter letters only\n")
         else:
             print(f"Welcome {name}! Its nearly time for Kick Off!")
             break
 
-       
+
 class Question:
     """
     Class for question which provides both,
@@ -50,7 +50,7 @@ question_prompt = [
         (a) Thierry Henry\n \
         (b) Alan Shearer\n \
         (c) Wayne Rooney\n",
-  
+
     "Who tops the all-time top Assists?\n \
         (a) Ryan Giggs\n \
         (b) Cesc Fabregas\n \
@@ -64,12 +64,12 @@ question_prompt = [
     "Who has won the competition the most times?\n \
         (a) Manchester United\n \
         (b) Arsenal\n \
-        (c) Chelsea\n", 
+        (c) Chelsea\n",
 
     "Who holds the record for most clean sheets?\n \
         (a) David James\n \
         (b) David Seaman\n \
-        (c) Petr Cech\n", 
+        (c) Petr Cech\n",
 
     "Who holds the record for most losses?\n \
         (a) West Ham\n \
@@ -170,7 +170,7 @@ question_answer = [
     Question(question_prompt[18], "b"),
     Question(question_prompt[19], "c"),
 
-] 
+]
 
 
 print(welcome())

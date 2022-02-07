@@ -14,9 +14,16 @@ def clear_console():
     os.system(command)
 
 
+def quit_game():
+    """Leaves the Quiz"""
+    print("An early bath for you, but try again another time!")
+    sys.exit()
+
+
 def welcome():
     """
-    Print ASCII art and get users name
+    Print ASCII art and get users name along
+    with users options
     """
     print('Welcome to my Ultimate Premier League Quiz!')
     print("""
@@ -48,9 +55,8 @@ def welcome():
     print("""
             Start (s)           
             Instructions (i)         
-            Quit (q)          
-    Type 's', 'i' or 'q'.""")
-
+            Quit (q) """)         
+    print("\n     Type 's', 'i' or 'q'.")
 
 
 def quiz_instructions():
@@ -71,7 +77,7 @@ def quiz_instructions():
     print("3. You will get a point for a correct answer.\n")
     time.sleep(2)
     print(("4. Once all questions are answered, your position " 
-        "will be revealed...'"))
+          "will be revealed...'"))
     print()
     print("-" * 25)
 

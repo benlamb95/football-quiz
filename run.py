@@ -31,7 +31,7 @@ def welcome():
                       ___
                   _.-'___'-._
                 .'--.`   `.--'.
-               /.'   \   /   `.
+               /.'   /   \   `.
               |/    |     |    \|
               | \ .''-._.-''. / |
                \ |     |     | /
@@ -91,7 +91,7 @@ def welcome_selection():
     """ Runs the selected option from welcome page """
     selection_options = True
     while selection_options:
-        selected = input("\n     Type 's', 'i' or 'q':").lower().strip("")
+        selected = input("\n\tType 's', 'i' or 'q':").lower().strip("")
         if selected == "s":
             start_quiz()
             break

@@ -17,6 +17,7 @@ def clear_console():
 def quit_game():
     """Leaves the Quiz"""
     print("An early bath for you, but try again another time!")
+    time.sleep(1)
     sys.exit()
 
 
@@ -56,7 +57,7 @@ def welcome():
             Start (s)           
             Instructions (i)         
             Quit (q) """)         
-    print("\n     Type 's', 'i' or 'q'.")
+    welcome_selection()
 
 
 def quiz_instructions():
@@ -80,6 +81,21 @@ def quiz_instructions():
           "will be revealed...'"))
     print()
     print("-" * 25)
+
+
+def welcome_selection():
+    """ Runs the selcted option from welcome page """
+    selection_options = True
+    while selection_options:
+        selected = input("\n     Type 's', 'i' or 'q'.").lower().strip("")
+        if selected == "s":
+            start_quiz()
+        elif selected == "i":
+            quiz_instructions()
+        elif selected == "q":
+            quit_game()
+        else:
+            print("Foul! Please choose from 's', 'i' and 'q'.")
 
 
 class Question:

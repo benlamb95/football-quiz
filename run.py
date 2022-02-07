@@ -16,7 +16,7 @@ def clear_console():
 
 def quit_game():
     """Leaves the Quiz"""
-    print("An early bath for you, but try again another time!")
+    print("\nAn early bath for you, but try again another time!")
     time.sleep(1)
     sys.exit()
 
@@ -31,8 +31,7 @@ def welcome():
                       ___
                   _.-'___'-._
                 .'--.`   `.--'.
-               /.'   \   /   `.\
-              | /'-._/```\_.-'\ |
+               /.'   \   /   `.
               |/    |     |    \|
               | \ .''-._.-''. / |
                \ |     |     | /
@@ -81,11 +80,15 @@ def quiz_instructions():
           "will be revealed...'"))
     print()
     print("-" * 25)
+    print("""
+            Start (s)           
+            Instructions (i)         
+            Quit (q) """)
     welcome_selection()
 
 
 def welcome_selection():
-    """ Runs the selcted option from welcome page """
+    """ Runs the selected option from welcome page """
     selection_options = True
     while selection_options:
         selected = input("\n     Type 's', 'i' or 'q':").lower().strip("")
@@ -106,7 +109,7 @@ def welcome_selection():
 class Question:
     """
     Class for question which provides both,
-    question askked and answer
+    question asked and answer
     """
     def __init__(self, prompt, answer):
         self.prompt = prompt

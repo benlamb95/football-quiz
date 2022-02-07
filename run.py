@@ -8,23 +8,27 @@ def welcome():
     """
     print('Welcome to my Ultimate Premier League Quiz!')
     print("""
-            _...----.._
-     ,:':::::.     `>.
-   ,' |:::::;'     |:::.
-  /    `'::'       :::::;\
-:         /:::::\      `  ::\
- /         _____     `:
-| ,.     /::SSt::\        |
-|;:::.   `::::::;'        |
-::::::     `::;'      ,.  ;
- \:::'              ,::::/
-  \                 \:::/
-   `.     ,:.        :;'
-     `-.::::::..  _.''
-        ```----'''
+             ___
+      _.-'___'-._
+    .'--.`   `.--'.
+   /.'   \   /   `.\
+  | /'-._/```\_.-'\ |
+  |/    |     |    \|
+  | \ .''-._.-''. / |
+   \ |     |     | /
+    '.'._.-'-._.'.'
+      '-:_____;-'
         """)
+    time.sleep(1)
+    while True:
+        name = input("Please enter your teams name:\n").title()
+        if any(l.isdigit() for l in name):
+            print("\nPlease enter letters only\n")           
+        else:
+            print(f"Welcome {name} lets get started")
+            break
 
-
+       
 class Question:
     """
     Class for question which provides both,

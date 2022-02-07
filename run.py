@@ -44,6 +44,13 @@ def welcome():
         else:
             print(f"Welcome {name}! Its nearly time for Kick Off!")
             break
+    time.sleep(1)
+    print("""
+            Start (s)           
+            Instructions (i)         
+            Quit (q)          
+    Type 's', 'i' or 'q'.""")
+
 
 
 def quiz_instructions():
@@ -207,4 +214,4 @@ question_answer = [
 ]
 
 
-print(quiz_instructions())
+print(welcome())

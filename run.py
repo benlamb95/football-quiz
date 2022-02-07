@@ -113,4 +113,29 @@ question_prompt = [
 ]
 
 
+question_answer = [
+    Question(question_prompt[0], "b"),
+    Question(question_prompt[1], "a"),
+    Question(question_prompt[2], "b"),
+    Question(question_prompt[3], "a"),
+    Question(question_prompt[4], "c"),
+    Question(question_prompt[5], "c"),
+    Question(question_prompt[6], "a"),
+    Question(question_prompt[7], "c"),
+    Question(question_prompt[8], "a"),
+    Question(question_prompt[9], "b"),
+    Question(question_prompt[10], "b"),
+    Question(question_prompt[11], "a"),
+    Question(question_prompt[12], "a"),
+    Question(question_prompt[13], "c"),
+    Question(question_prompt[14], "c"),
+    Question(question_prompt[15], "b"),
+    Question(question_prompt[16], "a"),
+    Question(question_prompt[17], "c"),
+    Question(question_prompt[18], "b"),
+    Question(question_prompt[19], "c"),
+
+] 
+
+
 print(question_prompt)

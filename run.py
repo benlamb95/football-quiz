@@ -2,6 +2,7 @@ import os
 import sys
 import time
 
+
 def welcome():
     """
     Print ASCII art and get users name
@@ -18,14 +19,19 @@ def welcome():
    \ |     |     | /
     '.'._.-'-._.'.'
       '-:_____;-'
-        """)
+        \n""")
+    time.sleep(1)
+    print("\nCan you become champions?\n")
+    time.sleep(1)
+    print("Or will you be relagated?")
+    print("-" * 25)
     time.sleep(1)
     while True:
-        name = input("Please enter your teams name:\n").title()
+        name = input("\nPlease enter your teams name:\n").title()
         if any(l.isdigit() for l in name):
             print("\nPlease enter letters only\n")           
         else:
-            print(f"Welcome {name} lets get started")
+            print(f"Welcome {name}! Its nearly time for Kick Off!")
             break
 
        

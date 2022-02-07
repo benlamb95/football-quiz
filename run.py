@@ -43,15 +43,18 @@ def quiz_instructions():
     print("The greatest league in the world!")
     print("I hope this quiz is fun yet challenging.")
     print("-" * 25)
-    time.sleep(1)
-    print("1. To answer a question select a, b or c.")
-    time.sleep(1)
-    print("2. The program will let you know if the answer is correct")
-    time.sleep(1)
-    print("3. You will get a point for a correct answer.")
-    time.sleep(1)
+    print()
+    time.sleep(2)
+    print("1. To answer a question select a, b or c.\n")
+    time.sleep(2)
+    print("2. The program will let you know if the answer is correct\n")
+    time.sleep(2)
+    print("3. You will get a point for a correct answer.\n")
+    time.sleep(2)
     print("4. Once all questions are answered, your position " +
     "will be revealed")
+    print()
+    print("-" * 25)
 
 
 class Question:

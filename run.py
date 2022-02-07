@@ -81,21 +81,26 @@ def quiz_instructions():
           "will be revealed...'"))
     print()
     print("-" * 25)
+    welcome_selection()
 
 
 def welcome_selection():
     """ Runs the selcted option from welcome page """
     selection_options = True
     while selection_options:
-        selected = input("\n     Type 's', 'i' or 'q'.").lower().strip("")
+        selected = input("\n     Type 's', 'i' or 'q':").lower().strip("")
         if selected == "s":
             start_quiz()
+            break
         elif selected == "i":
             quiz_instructions()
+            break
         elif selected == "q":
             quit_game()
+            break
         else:
-            print("Foul! Please choose from 's', 'i' and 'q'.")
+            print("\nFoul! Please choose from 's', 'i' and 'q'.")
+            continue
 
 
 class Question:

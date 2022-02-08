@@ -235,4 +235,8 @@ question_answer = [
 ]
 
 
+def start_quiz():
+    print("This link works")
+
+
 print(welcome())

@@ -43,18 +43,10 @@ def welcome():
         \n""")
     time.sleep(1)
     print("\nCan you become champions?\n")
-    time.sleep(1)
-    print("Or will you be relagated?")
+    time.sleep(2)
+    print("Or will you be relegated?")
     print("-" * 25)
-    time.sleep(1)
-    while True:
-        name = input("\nPlease enter your teams name:\n").title()
-        if any(l.isdigit() for l in name):
-            print("\nPlease enter letters only\n")
-        else:
-            print(f"Welcome {name}! Its nearly time for Kick Off!")
-            break
-    time.sleep(1)
+    time.sleep(2)
     print("""
             Start (s)           
             Instructions (i)         
@@ -240,11 +232,19 @@ questions = [
 
 
 def start_quiz(questions):
-    print("Kick Off!\n")
+    while True:
+        name = input("\nPlease enter your teams name:\n").title()
+        if any(l.isdigit() for l in name):
+            print("\nPlease enter letters only\n")
+        else:
+            print(f"\nWelcome {name}! Its time for Kick Off!\n")
+            break
+    time.sleep(2)
+    print("\n*Phwwwwwhht*\n")
     time.sleep(2.5)
     clear_console()
     score = 0
-    mix = random.shuffle(questions)
+    random.shuffle(questions)
     for question in questions:
         while True:
             answer = input(question.prompt).lower()
@@ -267,6 +267,7 @@ def start_quiz(questions):
                 break
     print("You got " + str(score) + " out of "
           + str(len(questions)) + " correct")
+    
 
 
 def main():

@@ -30,7 +30,7 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 * To provide users an easy to use and follow page structure with simple commands
 * To provide users feedback for both correct and incorrect answers as well as incorrect commands; producing error messages.
 
-## Constraints
+## Deployment
 
 The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 

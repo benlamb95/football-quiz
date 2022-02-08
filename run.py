@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+from modals import Question
 
 
 def clear_console():
@@ -45,7 +46,7 @@ def welcome():
     print("-" * 25)
     time.sleep(1)
     while True:
-        name = input("\nPlease enter your teams name:\n").title()
+        self.name = input("\nPlease enter your teams name:\n").title()
         if any(l.isdigit() for l in name):
             print("\nPlease enter letters only\n")
         else:
@@ -104,16 +105,6 @@ def welcome_selection():
         else:
             print("\nFoul! Please choose from 's', 'i' and 'q'.")
             continue
-
-
-class Question:
-    """
-    Class for question which provides both,
-    question asked and answer
-    """
-    def __init__(self, prompt, answer):
-        self.prompt = prompt
-        self.answer = answer
 
 
 question_prompt = [

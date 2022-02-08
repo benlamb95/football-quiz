@@ -94,18 +94,20 @@ def welcome_selection():
     """ Runs the selected option from welcome page """
     selection_options = True
     while selection_options:
-        selected = input("\n\tType 's', 'i' or 'q':").lower().strip("")
+        selected = input("\n\tType 's', 'i' or 'q':\n").lower().strip("")
         if selected == "s":
+            clear_console()
             start_quiz(questions)
             break
         elif selected == "i":
+            clear_console()
             quiz_instructions()
             break
         elif selected == "q":
             quit_game()
             break
         else:
-            print("\nFoul! Please choose from 's', 'i' and 'q'.")
+            print("\nFoul! Please choose from 's', 'i' and 'q'.\n")
             continue
 
 
@@ -263,4 +265,4 @@ def main():
     welcome()
 
 
-start_quiz(questions)
+main()

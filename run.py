@@ -1,7 +1,9 @@
 import os
 import sys
 import time
-from modals import Question, Team
+import random
+
+from modals import Question
 
 
 def clear_console():
@@ -94,7 +96,7 @@ def welcome_selection():
     while selection_options:
         selected = input("\n\tType 's', 'i' or 'q':").lower().strip("")
         if selected == "s":
-            start_quiz()
+            start_quiz(questions)
             break
         elif selected == "i":
             quiz_instructions()
@@ -210,7 +212,7 @@ question_prompt = [
 ]
 
 
-question_answer = [
+questions = [
     Question(question_prompt[0], "b"),
     Question(question_prompt[1], "a"),
     Question(question_prompt[2], "b"),
@@ -235,8 +237,30 @@ question_answer = [
 ]
 
 
-def start_quiz():
-    print("This link works")
+def start_quiz(questions):
+    score = 0
+    mix = random.shuffle(questions)
+    for question in questions:
+        while True:
+            answer = input(question.prompt).lower()
+            if answer not in {"a", "b", "c"}:
+                print("\nPlease select (a) (b) or (c) only\n")
+                continue
+            elif answer == question.answer:
+                score += 1
+                time.sleep(1)
+                print("\nWhat a win thats a point on the board\n")
+                break
+            else:
+                print("\nBad luck\n")
+                break
 
 
-print(welcome())
+def main():
+    """
+    Runs all main functions
+    """
+    welcome()
+
+
+start_quiz(questions)

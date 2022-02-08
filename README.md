@@ -10,7 +10,6 @@ And count towards my third Project Milestone with Code Institute.
 The [Premier League](https://www.premierleague.com/) is the most watched league in the world as it is the most challenging and competitive. So with this quiz I to hope it will be challenging but fun!
 
 
-
 ## Table of Contents
 
 * [User Experience](#UX)
@@ -26,8 +25,10 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 * [Credits](#credits)
 ----
 ## UX
-
-
+### Site Goals
+* To provide a fun quiz game that resides within a python Terminal
+* To provide users an easy to use and follow page structure with simple commands
+* To provide users feedback for both correct and incorrect answers as well as incorrect commands; producing error messages.
 
 ## Constraints
 

@@ -265,7 +265,7 @@ def start_quiz(questions):
                 time.sleep(2.5)
                 clear_console()
                 break
-    print("You got" + str(score) + " out of "
+    print("You got " + str(score) + " out of "
           + str(len(questions)) + " correct")
 
 

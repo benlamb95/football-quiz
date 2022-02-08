@@ -240,6 +240,9 @@ questions = [
 
 
 def start_quiz(questions):
+    print("Kick Off!\n")
+    time.sleep(2.5)
+    clear_console()
     score = 0
     mix = random.shuffle(questions)
     for question in questions:
@@ -252,9 +255,13 @@ def start_quiz(questions):
                 score += 1
                 time.sleep(1)
                 print("\nWhat a win thats a point on the board\n")
+                time.sleep(2.5)
+                clear_console()
                 break
             else:
                 print("\nBad luck\n")
+                time.sleep(2.5)
+                clear_console()
                 break
 
 

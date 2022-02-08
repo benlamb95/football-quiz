@@ -7,6 +7,9 @@ from modals import Question
 from questions import question_prompt
 
 
+
+
+
 def clear_console():
     """
     Clears the console function, with help
@@ -51,7 +54,7 @@ def welcome():
     print("""
             Start (s)           
             Instructions (i)         
-            Quit (q) """)         
+            Quit (q) """)       
     welcome_selection()
 
 
@@ -142,6 +145,7 @@ def start_quiz(questions):
     time.sleep(2.5)
     clear_console()
     score = 0
+    points = 3
     random.shuffle(questions)
     for question in questions:
         while True:
@@ -153,8 +157,9 @@ def start_quiz(questions):
                 continue
             elif answer == question.answer:
                 score += 1
+                points += 3
                 time.sleep(1)
-                print("\nWhat a win thats a point on the board\n")
+                print("\nCorrect!\n")
                 time.sleep(2.5)
                 clear_console()
                 break
@@ -163,9 +168,9 @@ def start_quiz(questions):
                 time.sleep(2.5)
                 clear_console()
                 break
-    print("You got " + str(score) + " out of "
-          + str(len(questions)) + " correct")
-    
+    print("You got " + str(score) + " out of " +
+          str(len(questions)) + " correct\n")
+    print("Meaning you got " + str(points) + " points")
 
 
 def main():

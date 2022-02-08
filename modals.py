@@ -12,12 +12,15 @@ class Question:
 
 class Team:
     """
-    Creates a team with users name,
-    the points they get and position
-    in a table based on points
+    Creates a team with the points they 
+    get and position in a table 
+    based on points
     """
 
-    def __init__(self, name, points, position):
-        self.name = name
-        self.points = points
-        self.position = position
+    def __init__(self, points, position):
+        self.points = 0
+        self.position = 21
+
+    
+    def add_point(self):
+        self.points += 1

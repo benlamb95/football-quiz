@@ -1,7 +1,7 @@
 import os
 import sys
 import time
-from modals import Question
+from modals import Question, Team
 
 
 def clear_console():
@@ -46,7 +46,7 @@ def welcome():
     print("-" * 25)
     time.sleep(1)
     while True:
-        self.name = input("\nPlease enter your teams name:\n").title()
+        name = input("\nPlease enter your teams name:\n").title()
         if any(l.isdigit() for l in name):
             print("\nPlease enter letters only\n")
         else:

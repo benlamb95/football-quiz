@@ -24,7 +24,7 @@ question_prompt = [
         (b) David Seaman\n \
         (c) Petr Cech\n",
 
-    "Who holds the record for most losses?\n \
+    "Who holds the record for most all-time losses?\n \
         (a) West Ham\n \
         (b) Newcastle\n \
         (c) Everton\n",
@@ -94,7 +94,7 @@ question_prompt = [
         (b) Peter Crouch\n \
         (c) Didier Drogba\n",
 
-    "Wat are Leiceter City also known as?\n \
+    "What are Leiceter City also known as?\n \
         (a) The Walkers\n \
         (b) The Kings\n \
         (c) The Foxes\n",

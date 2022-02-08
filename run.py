@@ -7,9 +7,6 @@ from modals import Question
 from questions import question_prompt
 
 
-
-
-
 def clear_console():
     """
     Clears the console function, with help
@@ -145,7 +142,7 @@ def start_quiz(questions):
     time.sleep(2.5)
     clear_console()
     score = 0
-    points = 3
+    points = 0
     random.shuffle(questions)
     for question in questions:
         while True:

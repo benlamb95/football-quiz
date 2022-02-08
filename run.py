@@ -250,6 +250,8 @@ def start_quiz(questions):
             answer = input(question.prompt).lower()
             if answer not in {"a", "b", "c"}:
                 print("\nPlease select (a) (b) or (c) only\n")
+                time.sleep(2.5)
+                clear_console()
                 continue
             elif answer == question.answer:
                 score += 1
@@ -263,6 +265,8 @@ def start_quiz(questions):
                 time.sleep(2.5)
                 clear_console()
                 break
+    print("You got" + str(score) + " out of "
+          + str(len(questions)) + " correct")
 
 
 def main():

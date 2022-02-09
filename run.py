@@ -47,7 +47,7 @@ def welcome():
     Print ASCII art and get users name along
     with users options
     """
-    print('Welcome to my Ultimate Premier League Quiz!')
+    print('\nWelcome to my Ultimate Premier League Quiz!')
     print("""
                       ___
                   _.-'___'-._
@@ -59,7 +59,7 @@ def welcome():
                 '.'._.-'-._.'.'
                   '-:_____;-'
         \n""")
-    time.sleep(1)
+    time.sleep(2)
     print("\nCan you become champions?\n")
     time.sleep(2)
     print("Or will you be relegated?")
@@ -197,8 +197,9 @@ def start_quiz(questions):
         key=lambda x: int(x[2]),
         reverse=True
         )
-    print(tabulate(table))
-    # https://stackoverflow.com/questions/50938274/sort-a-spread-sheet-via-gspread
+    print(tabulate(table, tablefmt='fancy_grid'))
+    
+    
     
 
 def main():

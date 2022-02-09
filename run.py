@@ -189,9 +189,10 @@ def start_quiz(questions):
           str(len(questions)) + " correct\n")
     print("Meaning you got " + str(points) + " points\n")
     print("Fetching your overall league position...\n")
-    table = SHEET.worksheet("table")
-    table.append_row(values=[name, score, points])
-    table.sort(basecolumnindex=2, sortorder='DESCENDING')
+    data = SHEET.worksheet("table")
+    # https://stackoverflow.com/questions/50938274/sort-a-spread-sheet-via-gspread
+    data.sort((3, 'des'), range='A2:C21')
+    data.append_row(values=[name, score, points])
 
 
 def main():

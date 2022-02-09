@@ -30,6 +30,12 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 * To provide users an easy to use and follow page structure with simple commands
 * To provide users feedback for both correct and incorrect answers as well as incorrect commands; producing error messages.
 
+
+
+## Testing 
+Testing was done through out the development of this quiz via the terminal in Gitpod. This project was easier to test as it runs through a terminal any way so all that was required was to test functions \ 
+by calling them and adding print statements. The ongest inital stage of testing was seeing whether or not the scores/points acquired by the user would add correctly to the spreadsheet. 
+
 ## Deployment
 
 ## Credits
@@ -41,4 +47,5 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 * (https://www.asciiart.eu/sports-and-outdoors/soccer) for the initial ball image
 
 ### Content
-The content was sourced direct from [Premier League](https://www.premierleague.com/) website. I created some questions myself and used (https://quiz-questions.uk/premier-league-football-quiz/) as well as (https://www.theguardian.com/football/2021/dec/09/football-quiz-premier-league-nuggets)
+The content was sourced direct from [Premier League](https://www.premierleague.com/) website. I created some questions myself and used (https://quiz-questions.uk/premier-league-football-quiz/) \
+ as well as (https://www.theguardian.com/football/2021/dec/09/football-quiz-premier-league-nuggets)

@@ -198,6 +198,28 @@ def start_quiz(questions):
         reverse=True
         )
     print(tabulate(table, tablefmt='fancy_grid'))
+    while True:
+        if score == 20:
+            print("Champeones, Champeones, ole, ole, ole!")
+            print("\nWell done!")
+            time.sleep(2.5)
+            break
+        elif score >= 15:
+            print("Nice Try, you made Top 4!")
+            time.sleep(2.5)
+            break
+        elif score > 7:
+            print("Room for improvement, but solid effort")
+            time.sleep(2.5)
+            break
+        elif score >= 3:
+            print("Much needed improvement!")
+            time.sleep(2.5)
+            break
+        else:
+            print("You've been relegated!")
+            time.sleep(2.5)
+            break
     
     
     

@@ -59,7 +59,7 @@ question_prompt = [
         (b) Didier Drogba\n \
         (c) Yaya Toure\n",
 
-    "Who is the only player to have lost two games but scored hat-tricks?\n \
+    "Who is the only player to have lost both games they scored hat-tricks in?\n \
         (a) Matt Le Tissier\n \
         (b) Alan Shearer\n \
         (c) Dwight Yorke\n",
@@ -74,7 +74,7 @@ question_prompt = [
         (b) Hull City\n \
         (c) Oldham\n",
 
-    "Which club holds the record without getting a red card?\n \
+    "Which club holds the record for most games without getting a red card?\n \
         (a) Liverpool\n \
         (b) Burnley\n \
         (c) Leicester\n",

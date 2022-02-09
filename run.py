@@ -220,10 +220,22 @@ def start_quiz(questions):
             print("You've been relegated!")
             time.sleep(2.5)
             break
-    
-    
-    
+    print("\nWhat would you like to do now?\n")
+    finish_options = True
+    while finish_options:
+        selected = input("Type '(r)restart','(q)quit':\n").lower().strip("")
+        if selected == "r":
+            clear_console()
+            welcome()
+            break
+        elif selected == "q":
+            quit_game()
+            break
+        else:
+            print("\nFoul! Please choose from 's' or 'q'.\n")
+            continue
 
+    
 def main():
     """
     Runs all main functions

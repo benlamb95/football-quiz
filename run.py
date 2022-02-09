@@ -170,25 +170,28 @@ def start_quiz(questions):
             answer = input(question.prompt).lower().strip()
             if answer not in {"a", "b", "c"}:
                 print("\nPlease select (a) (b) or (c) only\n")
-                time.sleep(2.5)
+                time.sleep(2)
                 clear_console()
                 continue
             elif answer == question.answer:
                 score += 1
                 points += 3
-                time.sleep(1)
                 print("\nCorrect!\n")
-                time.sleep(2.5)
+                time.sleep(2)
                 clear_console()
                 break
             else:
                 print("\nBad luck\n")
-                time.sleep(2.5)
+                time.sleep(2)
                 clear_console()
                 break
     print("You got " + str(score) + " out of " +
           str(len(questions)) + " correct\n")
-    print("Meaning you got " + str(points) + " points")
+    print("Meaning you got " + str(points) + " points\n")
+    print("Fetching your overall league position...\n")
+    table = SHEET.worksheet("table")
+    table.append_row(values=[name, score, points])
+    table.sort(basecolumnindex=2, sortorder='ASCENDING')
 
 
 def main():
@@ -198,4 +201,4 @@ def main():
     welcome()
 
 
-print(data)
+main()

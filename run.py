@@ -49,9 +49,9 @@ def welcome():
     print("-" * 25)
     time.sleep(2)
     print("""
-            Start (s)           
-            Instructions (i)         
-            Quit (q) """)       
+            Start (s)
+            Instructions (i)
+            Quit (q) """)
     welcome_selection()
 
 
@@ -130,9 +130,13 @@ questions = [
 
 
 def start_quiz(questions):
+    """
+    Function to loop through questions
+    randomly, and increment score & points
+    """
     while True:
         name = input("\nPlease enter your teams name:\n").title()
-        if any(l.isdigit() for l in name):
+        if any(letter.isdigit() for letter in name):
             print("\nPlease enter letters only\n")
         else:
             print(f"\nWelcome {name}! Its time for Kick Off!\n")
@@ -146,7 +150,7 @@ def start_quiz(questions):
     random.shuffle(questions)
     for question in questions:
         while True:
-            answer = input(question.prompt).lower()
+            answer = input(question.prompt).lower().strip()
             if answer not in {"a", "b", "c"}:
                 print("\nPlease select (a) (b) or (c) only\n")
                 time.sleep(2.5)

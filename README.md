@@ -38,3 +38,7 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 * Tutor within Code institute for their invaluable feedback and help
 * Slack to ask questions and look at previous answers. 
 * (https://www.delftstack.com/howto/python/python-clear-console/) How to clear a console
+* (https://www.asciiart.eu/sports-and-outdoors/soccer) for the initial ball image
+
+### Content
+The content was sourced direct from [Premier League](https://www.premierleague.com/) website. I created some questions myself and used (https://quiz-questions.uk/premier-league-football-quiz/) as well as (https://www.theguardian.com/football/2021/dec/09/football-quiz-premier-league-nuggets)

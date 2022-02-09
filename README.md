@@ -32,7 +32,9 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 
 ## Deployment
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+## Credits
+* I used Mike Dane (https://www.youtube.com/watch?v=SgQhwtIoQ7o&list=PLLAZ4kZ9dFpMMs5lskzBApYXn0bl7emsW&index=32) youtube tutorial to help structure my quiz section.
+* Inspiration to linking the Google Sheets to my python file from the Love Sandwiches run through project with Code Institute.
+* Tutor within Code institute for their invaluable feedback and help
+* Slack to ask questions and look at previous answers. 
+* (https://www.delftstack.com/howto/python/python-clear-console/) How to clear a console

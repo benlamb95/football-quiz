@@ -30,18 +30,22 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 * To provide users an easy to use and follow page structure with simple commands
 * To provide users feedback for both correct and incorrect answers as well as incorrect commands; producing error messages.
 
-
+### Site Goals
+* As a user I want to play a fun quiz game that is fun.
+* As a user I want the questions to have ranging difficulty.
+* As a user I want to be able to check my scores.
+* As a user I want there to be a consistent theme and language used.
 
 ## Testing 
-Testing was done through out the development of this quiz via the terminal in Gitpod. This project was easier to test as it runs through a terminal any way so all that was required was to test functions \ 
-by calling them and adding print statements. The ongest inital stage of testing was seeing whether or not the scores/points acquired by the user would add correctly to the spreadsheet. 
+Testing was done through out the development of this quiz via the terminal in Gitpod. This project was easier to test as it runs through a terminal any way so all that was required was to test functions 
+by calling them and adding print statements. The longest inital stage of testing was seeing whether or not the scores/points acquired by the user would add correctly to the spreadsheet. 
 
 ## Deployment
 
 ## Credits
 * I used Mike Dane (https://www.youtube.com/watch?v=SgQhwtIoQ7o&list=PLLAZ4kZ9dFpMMs5lskzBApYXn0bl7emsW&index=32) youtube tutorial to help structure my quiz section.
 * Inspiration to linking the Google Sheets to my python file from the Love Sandwiches run through project with Code Institute.
-* Tutor within Code institute for their invaluable feedback and help
+* Tutor within Code institute for their invaluable feedback and help. Sean Tutor helped with the table creation.
 * Slack to ask questions and look at previous answers. 
 * (https://www.delftstack.com/howto/python/python-clear-console/) How to clear a console
 * (https://www.asciiart.eu/sports-and-outdoors/soccer) for the initial ball image

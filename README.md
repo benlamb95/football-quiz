@@ -56,37 +56,37 @@ I decided to use the Questions class to hold all the quiz questions and answers.
 * Basic and to the point introduction
 * ASCII art of a football to enhance the design and make it feel arcadey.
 * 3 clear well defined instruction options
-* User input validation- If user selects anything other than 's', 'i' or 'q' an error message appears.
+* User input validation- If user selects anything other than 's', 'i' or 'q' an error message appears.  
 ![Screenshot of the welcome page](/documentation/welcome-screen.png "Screenshot of the welcome page")
 
 #### Instructions page
 * Bullet pointed list that is presented one at a time with a small delay for readability and interactive feel.
-* Easy to follow Instructions with user input validation
+* Easy to follow Instructions with user input validation  
 ![Screenshot of the Instructions page](/documentation/instructions-page.png "Screenshot of the Instructions page")
 
 #### Name input
 * Allows users to create a team name
 * The name must be letters only- with feedback for any name with any numbers in
-* The game will then welcome them with their name Titled and any unwanted spaces removed
+* The game will then welcome them with their name Titled and any unwanted spaces removed  
 ![Screenshot of Name inout page](/documentation/name-page.png "Screenshot of Name Page")
 
 #### Questions
-* Questions are delivered one at a time-clearing the console each time for readability
+* Questions are delivered one at a time-clearing the console each time for readability  
 ![Screenshot of Questions](/documentation/questions-page.png "Screenshot of Questions")
 * User input feedback again if any letter other than 'a', 'b' or 'c' entered and the console cleared with just the question again.
-* Users are also notified whether or not the question was answered correctly or not.
+* Users are also notified whether or not the question was answered correctly or not.  
 ![Screenshot of Questions input](/documentation/input-validation.png "Screenshot of Questions input")
 
 #### Result
-* Once all questions are answered the user is presented with a breakdown of their total score, points and that the table is being created.
+* Once all questions are answered the user is presented with a breakdown of their total score, points and that the table is being created.  
 ![Screenshot of result](/documentation/result.png "Screenshot of result")
 
 #### Table
-* The results of the user is also presented within a table. I wanted to include current Premier League teams as a start off to make users feel they are top of the league. (Man Utd being top is probably bias ;) )  
+* The results of the user is also presented within a table. I wanted to include current Premier League teams as a start off to make users feel they are top of the league. (Man Utd being top is probably bias ;) )    
 ![Screenshot of Table](/documentation/table.png "Screenshot of Table")
 
 #### Final message 
-* There are 4 final messages based on the total points gained by the user.  
+* There are 4 final messages based on the total points gained by the user.    
 ![Screenshot of Final Message](/documentation/final-message.png "Screenshot of Final message")
 
 -----
@@ -129,17 +129,17 @@ The only bug that I still have is when the user submits their result to my linke
 
 ## Linking back to User stories
 
-`As a user I want to play a fun quiz game that is fun.`:
+`As a user I want to play a fun quiz game that is fun.`:  
 As the game resides within a terminal it is difficult to make a game that looks visually stunning. To get around this i have tried to implement ASCII art and delays to functions to give it an arcadey feel.  
 Ive tried to create a realistic table at the end so that people feel like they are competing against real football teams.
 
-`As a user I want the questions to have ranging difficulty.`:
+`As a user I want the questions to have ranging difficulty.`:  
 The questions I have used really do vary in difficulty as I sent them off to my friends who are all massive football fans. They all struggled with certain questions and the best score 1 got was 17.
 
-`As a user I want to be able to check my scores.`:
+`As a user I want to be able to check my scores.`:  
 I have presented the score in two sections. I have provided a text based version whereby it lets them know how many questions they got right and then finally the overall league table.
 
-`As a user I want there to be a consistent theme and language used.`:
+`As a user I want there to be a consistent theme and language used.`:  
 Throughtout this game I have constantly tried to use Football terminology. Such as Early Bath for leaving the game and finally a champeones song if the user gets 20/20.
 
 ## Deployment

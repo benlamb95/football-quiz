@@ -3,7 +3,6 @@
 ## Introduction
 ---
 
-
 Football is one of my true passions in life and attending quiz nights is another; so what better to combine them both and create a python game which will help with my personal development using the python language?! \
 And count towards my third Project Milestone with Code Institute.
 
@@ -15,6 +14,7 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 * [User Experience](#UX)
     * [Site Goals](#Site-Goals)
     * [User Stories](#User-Stories)
+    * [Flow Diagrams](#Flow-Diagram)
     * [The Data Model](#The-Data-Model)
 * [Features](#features)
 * [Future Developments](#future-developments)
@@ -34,6 +34,44 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 * As a user I want to be able to check my scores.
 * As a user I want there to be a consistent theme and language used.
 
+## The Data Model
+I decided to use the Questions class to hold all the quiz questions and answers. Whilst building my game I also tried to introduce a player class but had left this a little bit too late as I had already build a structure for my game to follow. 
+
+## Features
+
+#### Welcome page
+* Basic and to the point introduction
+* ASCII art of a football to enhance the design and make it feel arcadey.
+* 3 clear well defined instruction options
+* User input validation- If user selects anything other than 's', 'i' or 'q' and error message appears.
+![Screenshot of the welcome page](/documentation/welcome-screen.png "Screenshot of the welcome page")
+
+#### Instructions page
+* Bullet pointed list that is presented one at a time with a small delay for readability and interactive feel.
+* Easy to follow Instructions with user input validation
+![Screenshot of the Instructions page](/documentation/instructions-page.png "Screenshot of the Instructions page")
+
+#### Name input
+* Allows users to create a team name
+* The name must be letters only- with feedback for any name with any numbers in
+* The game will then welcome them with their name Titled and any unwanted spaces removed
+![Screenshot of Name inout page](/documentation/name-page.png "Screenshot of Name Page")
+
+#### Questions
+* Questions are delivered one at a time-clearing the console each time for readability
+![Screenshot of Questions](/documentation/questions-page.png "Screenshot of Questions")
+* User input feedback again if any letter other than 'a', 'b' or 'c' entered and the console cleared with just the question again.
+* Users are also notified whether or not the question was answered correctly or not.
+![Screenshot of Questions input](/documentation/input-validation.png "Screenshot of Questions input")
+
+#### Result
+* Once all questions are answered the user is presented with a breakdown of their total score, points and that the table is being created.
+![Screenshot of result](/documentation/result.png "Screenshot of result")
+
+#### Table
+* The results of the user is also presented within a table. I wanted to include current Premier League teams as a start off to make users feel they are top of the league. (Man Utd being top is probably bias ;) )  
+![Screenshot of Table](/documentation/table.png "Screenshot of Table")
+
 ## Future Developments
 
 One future development would be to add as many questions as possible to be able to alternate the 20 questions that could be asked to the user.
@@ -45,7 +83,8 @@ would only get 1 point if the answer was correct. This would mean a more varied 
 ## Testing 
 Testing was done through out the development of this quiz via the terminal in Gitpod. This project was easier to test as it runs through a terminal any way so all that was required was to test functions 
 by calling them and adding print statements.  
-The longest inital stage of testing was seeing whether or not the scores/points acquired by the user would add correctly to the spreadsheet. 
+The longest inital stage of testing was seeing whether or not the scores/points acquired by the user would add correctly to the spreadsheet.   
+Testing was also conducted within the Code Institute Heroku terminal.
 
 ### Validator Testing
 I have tested my project within the [pep8online.com](http://pep8online.com/). The below screenshots prove this:  

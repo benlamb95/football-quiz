@@ -9,6 +9,9 @@ And count towards my third Project Milestone with Code Institute.
 The [Premier League](https://www.premierleague.com/) is the most watched league in the world as it is the most challenging and competitive. So with this quiz I to hope it will be challenging but fun!
 
 
+Please click on the following link for the finished product: [Final Deployment](https://premier-league-quiz.herokuapp.com/)
+
+
 ## Table of Contents
 
 * [User Experience](#UX)
@@ -43,6 +46,7 @@ Start of game:
 Game Logic:
 ![Screenshot of the game flow diagram](/documentation/game-logic.png "Screenshot of the game flow diagram")
 
+----
 ## The Data Model
 I decided to use the Questions class to hold all the quiz questions and answers. Whilst building my game I also tried to introduce a player class but had left this a little bit too late as I had already built a structure for my game to follow. 
 
@@ -84,6 +88,17 @@ I decided to use the Questions class to hold all the quiz questions and answers.
 #### Final message 
 * There are 4 final messages based on the total points gained by the user.  
 ![Screenshot of Final Message](/documentation/final-message.png "Screenshot of Final message")
+
+-----
+## Libraries Used
+
+- OS ---Enabled me to clear the terminal when needed so the Quiz is well structured and could present the information clearly.
+- SYS --- Allows the user to close the application by typing 'Q'.
+- time --- Time was used to delay certain inputs and functions. It helped to give the quiz a structured feel and as though the quiz was thinking.
+- random --- Random was used to help randomise the quiz questions
+- tabulate --- Used to create the final table within the application.
+- gspread --- By following the help of the code institute Love Sandwiches I was able to link a spreadsheet so the users scores could be saved and the table then created. 
+
 
 ## Future Developments
 

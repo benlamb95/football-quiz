@@ -15,10 +15,10 @@ Please click on the following link for the finished product: [Final Deployment](
 ## Table of Contents
 
 * [User Experience](#UX)
-    * [Site Goals](#Site-Goals)
-    * [User Stories](#User-Stories)
-    * [Flow Diagrams](#Flow-Diagram)
-    * [The Data Model](#The-Data-Model)
+* [Site Goals](#Site-Goals)
+* [User Stories](#User-Stories)
+* [Flow Diagrams](#Flow-Diagram)
+* [The Data Model](#The-Data-Model)
 * [Features](#features)
 * [Future Developments](#future-developments)
 * [Testing](#testing)
@@ -40,10 +40,10 @@ Please click on the following link for the finished product: [Final Deployment](
 ## Flow Diagrams
 To help me understand what I wanted to do within this project I intially drew my logic on a piece of paper. I was then recommended to use Lucid Chart by my mentor to present this electronically. By drawing out the flow of my game it massively helped me to understand the steps needed. Below I have included my flow Diagrams.
 
-Start of game:
+Start of game:  
 ![Screenshot of the Start of game flow diagram](/documentation/starting-logic.png "Screenshot of the Start of game flow diagram")
 
-Game Logic:
+Game Logic:  
 ![Screenshot of the game flow diagram](/documentation/game-logic.png "Screenshot of the game flow diagram")
 
 ----
@@ -126,6 +126,21 @@ I have tested my project within the [pep8online.com](http://pep8online.com/). Th
 
 ## Bugs
 The only bug that I still have is when the user submits their result to my linked spreadsheet, it doesnt go in value order like it does within the terminal; however this shouldn't impact the user in anyway.
+
+## Linking back to User stories
+
+`As a user I want to play a fun quiz game that is fun.`:
+As the game resides within a terminal it is difficult to make a game that looks visually stunning. To get around this i have tried to implement ASCII art and delays to functions to give it an arcadey feel.  
+Ive tried to create a realistic table at the end so that people feel like they are competing against real football teams.
+
+`As a user I want the questions to have ranging difficulty.`:
+The questions I have used really do vary in difficulty as I sent them off to my friends who are all massive football fans. They all struggled with certain questions and the best score 1 got was 17.
+
+`As a user I want to be able to check my scores.`:
+I have presented the score in two sections. I have provided a text based version whereby it lets them know how many questions they got right and then finally the overall league table.
+
+`As a user I want there to be a consistent theme and language used.`:
+Throughtout this game I have constantly tried to use Football terminology. Such as Early Bath for leaving the game and finally a champeones song if the user gets 20/20.
 
 ## Deployment
 

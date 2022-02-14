@@ -15,9 +15,7 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 * [User Experience](#UX)
     * [Site Goals](#Site-Goals)
     * [User Stories](#User-Stories)
-    * [The Scope Plane](#The-Scope-Plane)
-    * [The Structure Plane](#The-Structure-Plane)
-    * [The Surface Plane](#The-Surface-Plane)
+    * [The Data Model](#The-Data-Model)
 * [Features](#features)
 * [Future Developments](#future-developments)
 * [Testing](#testing)
@@ -30,7 +28,7 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 * To provide users an easy to use and follow page structure with simple commands
 * To provide users feedback for both correct and incorrect answers as well as incorrect commands; producing error messages.
 
-### Site Goals
+### User Stories
 * As a user I want to play a fun quiz game that is fun.
 * As a user I want the questions to have ranging difficulty.
 * As a user I want to be able to check my scores.
@@ -49,6 +47,18 @@ Testing was done through out the development of this quiz via the terminal in Gi
 by calling them and adding print statements.  
 The longest inital stage of testing was seeing whether or not the scores/points acquired by the user would add correctly to the spreadsheet. 
 
+### Validator Testing
+I have tested my project within the [pep8online.com](http://pep8online.com/). The below screenshots prove this:  
+#### Main Game
+![Screenshot of the pep8online validator tool results](/documentation/pep8-testing.png "Screenshot of the pep8online validator tool for main game")
+#### Questions
+![Screenshot of the pep8online validator tool results](/documentation/pep8-questions.png "Screenshot of the pep8online validator tool for questions")
+#### Modals
+![Screenshot of the pep8online validator tool results](/documentation/pep8-modals.png "Screenshot of the pep8online validator tool for modals")
+
+## Bugs
+The only bug that I still have is when the user submits their result to my linked spreadsheet, it doesnt go in value order like it does within the terminal; however this shouldn't impact the user in anyway.
+
 ## Deployment
 
 1. If not done so already `Sign up` to [Heroku](https://en.wikipedia.org/wiki/Heroku) and then `Log in`.
@@ -56,7 +66,7 @@ The longest inital stage of testing was seeing whether or not the scores/points 
 3. Give your project a suitable name. This name must be available and unique.
 4. Add `config vars` loated within the settings tab within the submenu if you have used the Code Institute Template. 
 5. Add `CREDS` within the Key input field and `PORT 8000` within the Values.
-6. Next add a buildpack ehich is below the above process.
+6. Next add a buildpack which is below the above process.
 7. Ensure `Python` is the first build pack and `Node.js` is second. You can drag and drop them to ensure this.
 8. Next connect your GitHub account and follow all steps prompted. Locate the repositary by searching for its name.
 9. You can then choose whether you wish to enable automatic deployments or manual. Initially I chose manual so I am in control of any changes.

@@ -35,7 +35,7 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 * As a user I want there to be a consistent theme and language used.
 
 ## Flow Diagrams
-To help me understand what I wanted to do within this project I intially drew my logic on a piece of paper. I was then reccomended to use Lucid Chart by my mentor to present this electronically. By drawing out the flow of my game it massively helped me to understand the steps needed. Below I have included my flow Diagrams.
+To help me understand what I wanted to do within this project I intially drew my logic on a piece of paper. I was then recommended to use Lucid Chart by my mentor to present this electronically. By drawing out the flow of my game it massively helped me to understand the steps needed. Below I have included my flow Diagrams.
 
 Start of game:
 ![Screenshot of the Start of game flow diagram](/documentation/starting-logic.png "Screenshot of the Start of game flow diagram")
@@ -44,7 +44,7 @@ Game Logic:
 ![Screenshot of the game flow diagram](/documentation/game-logic.png "Screenshot of the game flow diagram")
 
 ## The Data Model
-I decided to use the Questions class to hold all the quiz questions and answers. Whilst building my game I also tried to introduce a player class but had left this a little bit too late as I had already build a structure for my game to follow. 
+I decided to use the Questions class to hold all the quiz questions and answers. Whilst building my game I also tried to introduce a player class but had left this a little bit too late as I had already built a structure for my game to follow. 
 
 ## Features
 
@@ -52,7 +52,7 @@ I decided to use the Questions class to hold all the quiz questions and answers.
 * Basic and to the point introduction
 * ASCII art of a football to enhance the design and make it feel arcadey.
 * 3 clear well defined instruction options
-* User input validation- If user selects anything other than 's', 'i' or 'q' and error message appears.
+* User input validation- If user selects anything other than 's', 'i' or 'q' an error message appears.
 ![Screenshot of the welcome page](/documentation/welcome-screen.png "Screenshot of the welcome page")
 
 #### Instructions page

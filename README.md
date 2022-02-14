@@ -81,6 +81,10 @@ I decided to use the Questions class to hold all the quiz questions and answers.
 * The results of the user is also presented within a table. I wanted to include current Premier League teams as a start off to make users feel they are top of the league. (Man Utd being top is probably bias ;) )  
 ![Screenshot of Table](/documentation/table.png "Screenshot of Table")
 
+#### Final message 
+* There are 4 final messages based on the total points gained by the user.  
+![Screenshot of Final Message](/documentation/final-message.png "Screenshot of Final message")
+
 ## Future Developments
 
 One future development would be to add as many questions as possible to be able to alternate the 20 questions that could be asked to the user.
@@ -93,6 +97,7 @@ would only get 1 point if the answer was correct. This would mean a more varied 
 Testing was done through out the development of this quiz via the terminal in Gitpod. This project was easier to test as it runs through a terminal any way so all that was required was to test functions 
 by calling them and adding print statements.  
 The longest inital stage of testing was seeing whether or not the scores/points acquired by the user would add correctly to the spreadsheet.   
+![Screenshot of Final Table](/documentation/terminal-testing.png "Screenshot of Final table")  
 Testing was also conducted within the Code Institute Heroku terminal.
 
 ### Validator Testing

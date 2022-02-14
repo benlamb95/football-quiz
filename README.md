@@ -34,6 +34,15 @@ The [Premier League](https://www.premierleague.com/) is the most watched league 
 * As a user I want to be able to check my scores.
 * As a user I want there to be a consistent theme and language used.
 
+## Flow Diagrams
+To help me understand what I wanted to do within this project I intially drew my logic on a piece of paper. I was then reccomended to use Lucid Chart by my mentor to present this electronically. By drawing out the flow of my game it massively helped me to understand the steps needed. Below I have included my flow Diagrams.
+
+Start of game:
+![Screenshot of the Start of game flow diagram](/documentation/starting-logic.png "Screenshot of the Start of game flow diagram")
+
+Game Logic:
+![Screenshot of the game flow diagram](/documentation/game-logic.png "Screenshot of the game flow diagram")
+
 ## The Data Model
 I decided to use the Questions class to hold all the quiz questions and answers. Whilst building my game I also tried to introduce a player class but had left this a little bit too late as I had already build a structure for my game to follow. 
 
